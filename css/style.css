@@ -47,18 +47,14 @@ a:hover {
 }
 /* end main */
 
-
 /* navbar */
-
-.navbar-dark .navbar-nav .nav-link{
-    color: #fff;
-}
-.navbar-expand-lg .navbar-right a{
-    color: #fff;
-    margin: 0 10px;
-}
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
-    color: rgb(233,20,111);
+#navbar{
+    background-color: #343a40;
+    position: fixed;
+    top: -86px;
+    transition: top 0.3s; 
+    width: 100%;
+    z-index: 2;
 }
 /* start first section */
 .main{
@@ -66,7 +62,7 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 86px);
+    height: 100vh;
 }
 /* end first section */
 
@@ -137,6 +133,7 @@ a:hover {
     color: rgb(233,20,111);
     font-size: 11px;
     font-weight: bold;
+    display: inline-block;
 }
 .social-media .fourth .heading-1{
     font-size: 16px;
@@ -149,6 +146,21 @@ a:hover {
     font-weight: 200;
     max-width: 93%;
     text-transform: capitalize;
+}
+.social-media .note p,
+.branding .note p{
+    font-size: 12px;
+    color: rgb(233,20,111);
+}
+.social-media .note p a,
+.branding .note p a{
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(233,20,111);
+}
+.social-media .note p a:hover,
+.branding .note p a:hover{
+    color: #3E7FC5;
 }
 .bottom-line{
     height: 1px;
@@ -168,7 +180,21 @@ footer p{
     margin-top: 20px;
     text-transform: capitalize;
 }
-
+footer .bottom-links{
+    margin-top: 20px;
+}
+footer .bottom-links li{
+    display: inline-block;
+    margin-left: 5px;
+}
+footer .bottom-links li a{
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+footer .bottom-links li a:hover{
+    color: #E7196F;
+}
 /* responsive */
 
 /* Extra small devices (portrait phones, less than 576px) */

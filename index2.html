@@ -17,11 +17,11 @@
     </head>
     <body>
         
-        <!-- navbar -->
+       <!-- navbar -->
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="https://tcz-eg.com">
                     <img src="imgs/TCZ.png" alt="the creative zone logo">
                 </a>
             </div>
@@ -73,6 +73,11 @@
                             <p class="text-uppercase attached mt-3">* please send it with and without mockups</p>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div class="note text-center mt-5">
+                            <p>* please send the assessment to <a href="mailto:careers@thecreativezone-eg.com" target="_blank">careers@thecreativezone-eg.com</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,10 +86,38 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-center text-lg-left">
-                        <img src="imgs/TCZ.png" alt="the creative zone logo">
+                        <a href="https://tcz-eg.com">
+                            <img src="imgs/TCZ.png" alt="the creative zone logo">
+                        </a>
                     </div>
                     <div class="col-lg-6 text-center text-lg-right">
-                        <p>all rights reserved</p>
+                        <ul class="bottom-links">
+                            <li>
+                                <a href="https://www.facebook.com/TheCreativeZone.Eg">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/TCZ_Eg">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/tcz.eg/">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/TheCreativeZone">
+                                    <i class="fab fa-behance" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/the-creative-zone---egypt">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -93,16 +126,10 @@
         <script src="js/jquery-3.3.1.min.js"></script>                  <!-- jquery v3.3.1 -->
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>                     <!-- bootstrap v4.0.0 -->
+        <script src="js/script.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS animation library -->
         <script> 
             AOS.init();                                                 // init AOS animation library //
-        </script>
-        <script>
-            $('.brand-click').click(function () {
-                $('html ,body').animate({
-                    scrollTop: $('#brand').offset().top + 40
-                },1000);
-            });
         </script>
     </body>
 </html>
