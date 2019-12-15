@@ -1,0 +1,296 @@
+/* start main */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background: #1c1d21;
+  z-index: 1;
+}
+.text-overlay{                  /* show text on overlay */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.clearfix {
+  clear: both;
+}
+/* end main */
+
+
+/* navbar */
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-expand-lg .navbar-right a{
+    color: #fff;
+    margin: 0 10px;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(233,20,111);
+}
+/* start first section */
+.main{
+    background-image: url(../imgs/back-sm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 86px);
+}
+/* end first section */
+
+/* social-media */
+.social-media{
+    padding: 100px 0;
+    background-color: #fff;
+}
+.social-media .social-media-heading{
+    color: #262e3b;
+    font-size: 35px;
+    padding: 0 10px 30px;
+    position: relative;
+}
+.social-media .social-media-heading:after{
+    position: absolute;
+    content: "";
+    left: 47%;
+    top: 60px;
+    bottom: 0;
+    height: 4px;
+    width: 66px;
+    background: rgb(233,20,111);
+}
+.social-media-heading-subline{
+    color: #a7a9ac;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.social-media .first .heading-1{
+    font-size: 16px;
+    color: rgb(233,20,111);
+    font-weight: 500;
+}
+.social-media .first .heading-2{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 200;
+    max-width: 470px;
+    text-transform: capitalize;
+}
+.social-media .second p{
+    font-size: 14px;
+    line-height: 32px;
+    max-width: 470px;
+    text-transform: capitalize;
+}
+.social-media .second ul{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.social-media .second h4{
+    position: relative;
+}
+.social-media .second h4:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 40px;
+    bottom: 0;
+    height: 3px;
+    width: 60px;;
+    background: rgb(233,20,111);
+}
+.social-media .second .attached{
+    color: rgb(233,20,111);
+    font-size: 11px;
+    font-weight: bold;
+}
+.social-media .fourth .heading-1{
+    font-size: 16px;
+    color: rgb(233,20,111);
+    font-weight: 500;
+}
+.social-media .fourth .heading-2{
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 200;
+    max-width: 93%;
+    text-transform: capitalize;
+}
+.bottom-line{
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+}
+.social-media .second .bottom-line{
+    max-width: 470px;
+}
+
+/* footer */
+footer{
+    background-color: #2d2d2d;
+}
+footer p{
+    color: #fff;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+/* responsive */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .social-media .social-media-heading:after{
+        left: 41%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+}
+
+/* branding */
+.branding{
+    padding: 100px 0;
+    background-color: #fff;
+}
+.branding .branding-heading{
+    color: #262e3b;
+    font-size: 35px;
+    padding: 0 10px 50px;
+    position: relative;
+}
+.branding .branding-heading:after{
+    position: absolute;
+    content: "";
+    left: 47%;
+    top: 60px;
+    bottom: 0;
+    height: 4px;
+    width: 66px;
+    background: rgb(233,20,111);
+}
+.branding-heading-subline{
+    color: #a7a9ac;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.branding .second .heading-1{
+    font-size: 23px;
+    color: rgb(233,20,111);
+    font-weight: 600;
+}
+.branding .second p{
+    font-size: 14px;
+    line-height: 32px;
+    max-width: 470px;
+    text-transform: capitalize;
+}
+.branding .second ul{
+    text-transform: capitalize;
+}
+.branding .second h4{
+    position: relative;
+}
+.branding .second h4:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 40px;
+    bottom: 0;
+    height: 3px;
+    width: 60px;;
+    background: rgb(233,20,111);
+}
+.branding .second .attached{
+    color: rgb(233,20,111);
+    font-size: 11px;
+    font-weight: bold;
+}
+.branding .border-right{
+    border-right-style: dashed !important;
+}
+/* footer */
+footer{
+    background-color: #2d2d2d;
+}
+footer p{
+    color: #fff;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.branding .bottom-line{
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    display: none;
+    margin: 3rem 0;
+}
+
+/* responsive */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .branding .branding-heading:after{
+        left: 41%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .hire h3{
+        font-size: 1.4rem;
+    }
+    .branding .border-right{
+        border-right: 0!important;
+    }
+    .branding .second .pl-5{
+        padding-left: 0!important;
+    }
+    .branding .bottom-line{
+        display: block;
+    }
+}
