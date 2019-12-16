@@ -320,3 +320,8 @@ footer p{
         display: block;
     }
 }
+
+.task p,
+.task .links{
+    line-height: 1.8;
+}
