@@ -296,37 +296,6 @@ footer p{
     margin: 3rem 0;
 }
 
-/* responsive */
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    .branding .branding-heading:after{
-        left: 41%;
-    }
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-    .hire h3{
-        font-size: 1.4rem;
-    }
-    .branding .border-right,
-    .task .border-right{
-        border-right: 0!important;
-    }
-    .branding .second .pl-5{
-        padding-left: 0!important;
-    }
-    .branding .bottom-line,
-    .task .bottom-line{
-        display: block;
-    }
-}
-
 .task p,
 .task .links{
     line-height: 1.8;
@@ -354,4 +323,40 @@ footer p{
 }
 .task .grid-con .item3{
     grid-area: fit;
+}
+
+/* responsive */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .branding .branding-heading:after{
+        left: 41%;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .task .grid-con{
+        grid-template-areas:
+            'Glem'
+            'Chicken'
+            'fit';
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .hire h3{
+        font-size: 1.4rem;
+    }
+    .branding .border-right,
+    .task .border-right{
+        border-right: 0!important;
+    }
+    .branding .second .pl-5{
+        padding-left: 0!important;
+    }
+    .branding .bottom-line,
+    .task .bottom-line{
+        display: block;
+    }
 }
